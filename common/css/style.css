@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/* variable definition */
+:root {
+	--var-sans-serif: "游ゴシック体", 'YuGothic', "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", 'Meiryo', "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+	--var-serif:  "游明朝体", "YuMincho", "Yu Mincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ 明朝", serif;
+	--var-sans-alphabet: helvetica, 'arial black', arial, sans-serif;
+	--var-color-base: #211915;
+	--var-color-a: #211915;
+	--var: 10px;
+	--var2: 10px;
+	--var-3: 10px;
+}
+/* / variable definition */
+
+html {
+    /* tap hightlight color customize */
+    -webkit-tap-highlight-color: transparent;
+    /* / tap hightlight color customize */
+    font-size: 10px;
+}
+
+body {
+    background: #fff;
+    /* text renderign optimize */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    /* / text renderign optimize */
+    /* text kerning automation */
+    -moz-font-feature-settings: "palt";
+    -webkit-font-feature-settings: "palt";
+    font-feature-settings: "palt";
+    /* / text kerning automation */
+    /* smartphone(horizontal) text size adjust */
+    -webkit-text-size-adjust: 100%;
+    /* /smartphone(horizontal) text size adjust */
+    font-family: var(--var-sans-serif);
+    font-size: 1.4rem;
+    color: var(--var-color-base);
+    letter-spacing: 0.045rem;
+    line-height: 2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    letter-spacing: .4rem;
+}
+
+p {
+    margin: 0 0 1em 0;
+}
+
+a {
+    color: var(--var-color-a);
+    text-decoration: underline;
+}
+
+a:hover {
+    opacity: .8;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+ul, ol {
+    padding: 0;
+}
+
+dl {
+    margin: 0;
+}
+
+/*
+ *
+ * ---
+ *
+ ****************/
+
+/*
+ *
+ ****************/
+
+/*  */
+
+@media print, screen and (min-width: 768px) {
+}
+
+@media print, screen and (max-width: 767px) {
+}

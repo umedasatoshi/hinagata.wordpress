@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/*
+Theme Name: hinagata
+Description: Wordpressの雛形テーマ「hinagata」
+Author: Satoshi Umeda
+Theme URI: None
+Author URI: https://curogo.com
+License: GNU General Public License
+License URI:http://www.gnu.org/licenses/gpl.html
+Version: 2.00
+Tags: blog,one-column
+Text Domain: hinagata
+Domain Path: /languages
+*/
+
+@import url("common/css/reboot.css");
+@import url("common/css/style.css");
+
+.wp-caption {
+	
+}
+
+.wp-caption-text {
+	
+}
+
+.sticky {
+	
+}
+
+.gallery-caption {
+	
+}
+
+.bypostauthor {
+	
+}
+
+.alignright {
+	
+}
+
+.alignleft {
+	
+}
+
+.aligncenter {
+	
+}
+
+.screen-reader-text {
+	
+}
+
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
