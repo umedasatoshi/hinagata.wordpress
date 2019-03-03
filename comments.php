@@ -8,6 +8,6 @@
 	<?php paginate_comments_links(); ?>
 	<?php } ?>
 	<?php comment_form(); ?>
-	<p class="hide"><?php _e('', 'hinagata'); ?></p>
+	<p class="hide"><?php _e('', 'hinagata.wordpress'); ?></p>
 </aside>
 <?php } ?>
