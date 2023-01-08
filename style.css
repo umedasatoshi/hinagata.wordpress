@@ -5,13 +5,15 @@ Theme Name: hinagata
 Description: Wordpressの雛形テーマ「hinagata」
 Author: Satoshi Umeda
 Theme URI: None
-Author URI: https://curogo.com
+Author URI: https://umeda.design
 License: GNU General Public License
 License URI:http://www.gnu.org/licenses/gpl.html
 Version: 2.00
 Tags: blog,one-column
 Text Domain: hinagata
 Domain Path: /languages
+Tested up to: 6.1.1
+Requires PHP: 8.0.25
 */
 
 @import url("common/css/reboot.css");
