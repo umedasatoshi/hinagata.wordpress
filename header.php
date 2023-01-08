@@ -5,17 +5,16 @@
 <meta name="author" content="<?php the_author(); ?>" />
 <meta name="description" content="<?php bloginfo('description'); ?>" />
 <meta name="keywords" content="keywords" />
-<meta property="og:title" content="<?php bloginfo('name'); ?><?php if(!is_home()) { echo ' | '; wp_title();} ?>">
+<meta property="og:title" content="<?php bloginfo('name'); ?><?php if(!is_home()) { echo ' | '; add_theme_support('title-tag');} ?>">
 <meta property="og:description" content="<?php bloginfo('description'); ?>">
 <meta property="og:url" content="<?php echo esc_url(home_url()) ; ?>">
 <meta property="og:image" content="<?php get_template_directory_uri(); ?>/common/img/ogp_default.jpg">
 <meta property="image_src" content="<?php get_template_directory_uri(); ?>/common/img/ogp_default.jpg">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="<?php bloginfo('name'); ?><?php if(!is_home()) { echo ' | '; wp_title();} ?>">
+<meta property="og:site_name" content="<?php bloginfo('name'); ?><?php if(!is_home()) { echo ' | '; add_theme_support('title-tag');} ?>">
 <meta property="og:site_url" content="<?php echo esc_url(home_url()) ; ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" media="screen,tv" />
-<link rel="shortcut icon" href="<?php get_template_directory_uri(); ?>/common/img/favicon/favicon.ico" />
 <?php if ( is_singular() ) wp_enqueue_script('comment-reply'); ?>
 <?php wp_head(); ?>
 </head>
@@ -27,10 +26,10 @@
 <!-- /#header -->
 </header>
 <nav id="global-nav">
-	<ul>
-		<li><a href="">Sample</a></li>
-		<li><a href="">Sample</a></li>
-		<li><a href="">Sample</a></li>
-	</ul>
+  <?php 
+    wp_nav_menu( array( 
+      'theme_location' => 'header-navigation' 
+    )); 
+  ?>
 <!-- /#global-nav -->
 </nav>
